@@ -1,16 +1,16 @@
-# SoftdevProject
-Uses Canvas
-Ideas so far:
-Donkey Kong jump the barrel
-Snake
-Pac-man(maybe)
-Brickbreaker
-Dropping Person
-Catch the falling thing from sky
-Fruit Ninja(mousedown/click(easier))
-Dart Ballons
-CubeField/Runner
-Pool/Mini golf
-Street Crossing(frogger)
-Space Invaders
-Tetris
+# SoftdevProject<br>
+Uses Canvas<br>
+Ideas so far:<br>
+Donkey Kong jump the barrel<br>
+Snake<br>
+Pac-man(maybe)<br>
+Brickbreaker<br>
+Dropping Person<br>
+Catch the falling thing from sky<br>
+Fruit Ninja(mousedown/click(easier))<br>
+Dart Ballons<br>
+CubeField/Runner<br>
+Pool/Mini golf<br>
+Street Crossing(frogger)<br>
+Space Invaders<br>
+Tetris<br>
