@@ -1,4 +1,5 @@
 # SoftdevProject<br>
+Sarah Joseph, Shi Shu, Dalton Wu Period 7 <br>
 Uses Canvas<br>
 Ideas so far:<br>
 Donkey Kong jump the barrel<br>
