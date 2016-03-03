@@ -2,15 +2,16 @@
 Uses Canvas<br>
 Ideas so far:<br>
 Donkey Kong jump the barrel<br>
-Snake<br>
+Snake SJ<br>
 Pac-man(maybe)<br>
-Brickbreaker<br>
+Brickbreaker SJ<br>
 Dropping Person<br>
-Catch the falling thing from sky<br>
+Catch the falling thing from sky SJ<br>
 Fruit Ninja(mousedown/click(easier))<br>
 Dart Ballons<br>
 CubeField/Runner<br>
-Pool/Mini golf<br>
+Pool SJ<br>
+Mini golf SJ<br>
 Street Crossing(frogger)<br>
 Space Invaders<br>
 Tetris<br>
