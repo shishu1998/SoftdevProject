@@ -7,7 +7,7 @@ Snake SJ<br>
 Pac-man(maybe) SS<br>
 Brickbreaker SJ SS<br>
 Dropping Person<br>
-Catch the falling thing from sky SJ SS<br>
+Catch the falling thing from sky SJ SS DW<br>
 Fruit Ninja(mousedown/click(easier)) SS<br>
 Dart Ballons<br>
 CubeField/Runner<br>
