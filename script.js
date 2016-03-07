@@ -1,11 +1,17 @@
 var c =  document.getElementById("slate");
 var ctx = c.getContext("2d");
 
+//x-coordinate of the semicircle
+var sx;
 var frameid;
 
 //start button that draws a semicircle
 var startB = function() {
     //code to draw semicircle
+    sx = c.width/2;
+    ctx.beginPath();
+    ctx.arc(sx,480,20,0,Math.PI);
+    
 };
 
 var start = document.getElementById("s");
