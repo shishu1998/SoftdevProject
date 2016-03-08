@@ -31,7 +31,24 @@ s.addEventListener("click", startB);
 //function that reacts to key pressed
 
 //function that drops objects from the sky
+var dropid;
+var drop = function() {
+    var radius = 10;
+    var xcor = 250;
+    var ycor = 250;
 
+    var animCode = function() {
+
+        ctx.clearRect(0,0,c.width,c.height);
+        ctx.beginPath();
+        ctx.arc(xcor, ycor, radius, 0, 2*Math.PI);
+        ctx.fill();
+        dropid = window.requestAnimationFrame(animCode);
+        ycor ++;
+    };
+
+    animCode();
+};
 //function that subtracts a life when an object falls to the bottom and checks if lives = 0
 
 //function that catches and adds a point when an object is picked up
