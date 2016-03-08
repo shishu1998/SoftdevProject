@@ -5,25 +5,28 @@ var ctx = c.getContext("2d");
 var sx = c.width/2;
 var frameid;
 
-//start button that draws a semicircle
+//start button that draws a semicircle, attaches eventlistener
 var startB = function() {
     //code to draw semicircle
     ctx.clearRect(0,0,c.width,c.height);
     ctx.beginPath();
     ctx.arc(sx,480,20,0,Math.PI);
     ctx.stroke();
+    window.addEventListener("keydown",move);
 };
 
 var move = function(e){
     console.log(e);
-    if(sx != 20 && sx != c.width-20){
-	console.log(sx);
-	sx = sx + 10;	
+    if(e.keyIdentifier == "Left" && sx != 20){
+	sx = sx - 5;	
+	startB();
+    }
+    if(e.keyIdentifier == "Right" && sx != c.width-20){
+	sx = sx + 5;
 	startB();
     }
 };
 
-//c.addEventListener("keydown",move);
 
 var start = document.getElementById("s");
 s.addEventListener("click", startB);
