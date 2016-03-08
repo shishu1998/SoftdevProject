@@ -3,20 +3,21 @@
 <head>
 <title>Catcher</title>
 <style>
-  #slate { 
-  border:1px solid black
-  }
+canvas {
+  border: 1px solid black;
+}
 </style>
 </head>
 
 <body>
+<h1>Catch the falling objects</h1>
 
-  <h1>Catch the falling objects</h1>
+<canvas id="slate" height="500" width="500"></canvas>
 
-    <canvas id="slate" height="500" width = "500">
-    </canvas>
-    <button id="s"> Start </button><br>
-    Your Score:<br>
-    <input type="text" READONLY id = "score"></input>
-</body><script src="script.js"></script>
+<button id="s">Start</button><br>
+Your Score:<br>
+<input id="score" type="text" READONLY></input>
+
+<script src="script.js"></script>
+</body>
 </html>
