@@ -1,6 +1,7 @@
 var c =  document.getElementById("slate");
 var ctx = c.getContext("2d");
-
+var scoreboard = document.getElementById("score");
+var score = 0;
 
 //x-coordinate of the semicircle
 var sx = c.width/2;
@@ -64,6 +65,12 @@ function drop() {
 
     animCode();
 };
+
+var changescore(){
+    score ++;
+    scoreboard.value = score;
+};
+
 //function that subtracts a life when an object falls to the bottom and checks if lives = 0
 
 //function that catches and adds a point when an object is picked up
