@@ -14,6 +14,7 @@ var startB = function() {
     ctx.arc(sx,480,20,0,Math.PI);
     ctx.stroke();
     window.addEventListener("keydown",move);
+    drop();
 };
 
 
@@ -43,14 +44,14 @@ var dropid;
 function drop() {
     var radius = 10;
     var xcor = 250;
-    var ycor = 250;
+    var ycor = 0;
 
     var animCode = function() {
 	console.log("ok");
         ctx.clearRect(0,0,c.width,c.height);
 
         if (ycor == c.height-10) {
-	    alert("dead");
+	    console.log(ycor);
 	    window.cancelAnimationFrame(dropid);
 	}
 	else {
