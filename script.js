@@ -10,10 +10,6 @@ var frameid;
 //start button that draws a semicircle, attaches eventlistener
 var startB = function() {
     //code to draw semicircle
-    ctx.clearRect(0,0,c.width,c.height);
-    ctx.beginPath();
-    ctx.arc(sx,480,20,0,Math.PI);
-    ctx.stroke();
     window.addEventListener("keydown",move);
     drop();
 };
@@ -23,12 +19,14 @@ var move = function(e){
     console.log(e);
     if(e.keyIdentifier == "Left" && sx != 20){
 	sx = sx - 5;	
-	startB();
     }
     if(e.keyIdentifier == "Right" && sx != c.width-20){
 	sx = sx + 5;
-	startB();
     }
+    ctx.clearRect(0,0,c.width,c.height);
+    ctx.beginPath();
+    ctx.arc(sx,480,20,0,Math.PI);
+    ctx.stroke();
 };
 
 
@@ -67,7 +65,7 @@ function drop() {
     animCode();
 };
 
-var changescore(){
+var changescore = function(){
     score ++;
     scoreboard.value = score;
 };
