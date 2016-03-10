@@ -11,22 +11,18 @@ var frameid;
 var startB = function() {
     //code to draw semicircle
     window.addEventListener("keydown",move);
-    drop();
+    draw();
 };
 
 
 var move = function(e){
     console.log(e);
-    if(e.keyIdentifier == "Left" && sx != 20){
+    if(e.keyIdentifier == "Left" && sx != 40){
 	sx = sx - 5;	
     }
-    if(e.keyIdentifier == "Right" && sx != c.width-20){
+    if(e.keyIdentifier == "Right" && sx != c.width){
 	sx = sx + 5;
     }
-    ctx.clearRect(0,0,c.width,c.height);
-    ctx.beginPath();
-    ctx.arc(sx,480,20,0,Math.PI);
-    ctx.stroke();
 };
 
 
@@ -37,26 +33,28 @@ s.addEventListener("click", startB);
 //function that drops objects from the sky 
 
 ctx.fillStyle = "#FF0000";
-
 var dropid;
 
-function drop() {
+var draw = function(){
     var radius = 10;
     var xcor = 250;
     var ycor = 0;
-
+    
     var animCode = function() {
 	console.log("ok");
-        ctx.clearRect(0,0,c.width,c.height);
 
         if (ycor == c.height-10) {
 	    console.log(ycor);
 	    window.cancelAnimationFrame(dropid);
 	}
 	else {
+	    ctx.clearRect(0,0,c.width,c.height);
 	    ctx.beginPath();
 	    ctx.arc(xcor, ycor, radius, 0, 2*Math.PI);
 	    ctx.fill();
+	    ctx.moveTo(sx,480);
+	    ctx.arc(sx - 20,480,20,0,Math.PI);
+	    ctx.stroke();
 	    dropid = window.requestAnimationFrame(animCode);
 	    ycor ++;
 	}
