@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Catcher</title>
 <style>
+html {
+  font-family: Verdana, sans-serif;
+}
 canvas {
   border: 1px solid black;
+  cursor: none;
+}
+.left {
+	text-align: left;
+	padding-right: 5em;
+}
+.right {
+	text-align: right;
+	padding-left: 5em;
 }
 </style>
 </head>
 
 <body>
-<h1>Catch the falling objects</h1>
+<center>
+<h1>CATCH THE PANCAKES</h1>
 
-<canvas id="slate" height="500" width="500"></canvas>
-
-<button id="s">Start</button><br>
-Your Score:<br>
-<input id="score" type="text" READONLY></input>
+<span class="left">level <span id="level">0</span></span>
+<span class="right">score: <span id="score">0</span></span>
+<br>
+<canvas id="canvas" height="500" width="500"></canvas>
+<br>
+<button onclick="start()">Start</button>
+</center>
 
 <script src="script.js"></script>
 </body>
