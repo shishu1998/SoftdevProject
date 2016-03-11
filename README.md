@@ -7,6 +7,6 @@ Catch the falling pancakes from the sky by controlling the pan with your mouse. 
 
 
 #To Do<br>
-- [ x ] Make the objects fall - SJ<br>
-- [ x ] Make catching device that follows arrow keys or mouse (stationery when no keys are pressed)- SS<br>
-- [ x ] Handle objects that have fallen out of range or into basket - DW<br>
+- [x] Make the objects fall - SJ<br>
+- [x] Make catching device that follows arrow keys or mouse (stationery when no keys are pressed)- SS<br>
+- [x] Handle objects that have fallen out of range or into basket - DW<br>
